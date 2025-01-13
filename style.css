@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+                font-size: 2.5rem;
+            }
+
+            nav {
+                background-color: olive;
+                color: white;
+                display: flex;
+                justify-content: center;
+                padding: 0.5rem 0;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            .hero {
+                background-color: #d4a373;
+                color: white;
+                text-align: center;
+                padding: 3rem 1rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero button {
+                background-color: maroon;
+                color: white;
+                border: none;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .hero button:hover {
+                background-color: darkred;
+            }
+
+            .sections {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 2rem 0;
+                padding: 0 1rem;
+            }
+
+            .section {
+                background-color: #f0f0f0;
+                margin: 1rem;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                flex: 1 1 calc(30% - 2rem);
+                max-width: calc(30% - 2rem);
+                text-align: center;
+            }
+
+            .section img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .section h3 {
+                color: maroon;
+                margin-top: 1rem;
+            }
+
+            .footer {
+                background-color: olive;
+                color: white;
+                text-align: center;
+                padding: 1rem 0;
+                margin-top: 2rem;
+            }
+
+            @media (max-width: 768px) {
+                .sections {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .section {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
